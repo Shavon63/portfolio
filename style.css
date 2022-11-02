@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Russo+One&display=swap');
+body {
+    background-color: blanchedalmond;
+}
+.profilePic{
+box-shadow: 15px 15x black;
+}
+
+.heading {
+    text-align: center;
+    font-size: 25px;
+    font-family: Aton, russo; 
+    margin-top: 30px;
+    animation: color-chnage 1s infinite;
+    -webkit-animation: color-change 1s infinite;
+    -moz-animation: color-change 1s infinite;
+    -o-animation: color-change 1s infinite;
+    -ms-animation: color-change 1s infinite;
+    animation: color-change 1s infinite;
+}
+@keyframes color-change {
+    0% {color: red}
+    50% {color: green}
+    100% {color: blue}
+}
+
+
+
+nav {
+    height: 100%;
+    width: 100px ;
+    margin: 20px;
+    text-align: left;
+    padding: 5px;
+    
+}
+
+
+.nav li{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    list-style: none;
+    animation: color-chnage 1s infinite;
+    -webkit-animation: color-change 1s infinite;
+    -moz-animation: color-change 1s infinite;
+    -o-animation: color-change 1s infinite;
+    -ms-animation: color-change 1s infinite;
+    animation: color-change 1s infinite;
+}
+@keyframes color-change {
+    0% {color: red}
+    50% {color: green}
+    100% {color: blue}
+}
+    
+.aboutMe{
+    text-decoration-line: none;
+    height: 150px;
+    width: 100%;
+    color: whitesmoke;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px;
+    border-style: dashed;
+    border-width: 4px;
+    text-align: justify;
+    font-size:25px;
+    position: relative;
+
+} 
+.skills {
+    border-style: dashed;
+    border-width: 4px;
+    text-align: justify;
+    color: whitesmoke;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.skillsLi li{
+    margin: 10px;
+}
+footer{
+    color: whitesmoke;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.page-2 {
+    display: none;
+}
+
+.page-3 {
+    display: none;
+}
