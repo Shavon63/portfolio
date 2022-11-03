@@ -13,10 +13,12 @@ box-shadow: 15px 15x black;
 .container{
     display: flex;
     margin: 25px 10px 50px 50px ;
+    width: fit-content;
 }
 .container img{
     margin-right: 20px;
     border-radius: 4%;
+    box-shadow: 20px 20px rgb(0, 255, 255, .5);
 }
 .heading {
     font-size: 25px;
@@ -28,7 +30,6 @@ box-shadow: 15px 15x black;
     -o-animation: color-change 1s infinite;
     -ms-animation: color-change 1s infinite;
     animation: color-change 1s infinite;
-    position: relative;
     text-align: center;
 }
 
@@ -40,22 +41,21 @@ box-shadow: 15px 15x black;
 
 
 
-.nav {
-    height: 100px; 
-    width: 100%;
+.nav { 
     text-align: center;
     margin-top: 30px;
-    flex-direction: row;
-    
-    
-    
+    margin-right: 0;
+    margin-top: 0;
+    width: 100%;
+    position: fixed;
+    list-style: none;
+    justify-content: space-between;
     
 } 
 
 
 .nav li{
     text-decoration: none;
-    color: black;
     padding: 5px;
     list-style: none;
     animation: color-chnage 1s infinite;
@@ -64,15 +64,24 @@ box-shadow: 15px 15x black;
     -o-animation: color-change 1s infinite;
     -ms-animation: color-change 1s infinite;
     animation: color-change 1s infinite;
-    text-align: center;
+    text-align: right; 
 
 
+}
+
+.nav button {
+    color: aqua;
+    background-color: rgb(0, 255, 255, .5);
+    border-radius: 6px;
+    cursor: pointer;
 }
 @keyframes color-change {
     0% {color: red}
     50% {color: green}
     100% {color: blue}
 }
+    
+
     
 .aboutMe{
     text-decoration-line: none;
@@ -86,6 +95,7 @@ box-shadow: 15px 15x black;
     border-width: 4px;
     text-align: justify;
     font-size:22px;
+    margin: 150px 20px 10px 20px;
     
 } 
 .skills {
@@ -93,23 +103,32 @@ box-shadow: 15px 15x black;
     border-width: 4px;
     text-align: justify;
     color: whitesmoke;
-    width: 400px;
-    height: 250px;
+    width: 300px;
+    height: 140px;
     font-size: 15px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+    margin: 60px 20px 10px 20px;  
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
 }
 
 
 @media(max-width: 500px){
+
+    .container{
+        margin-top: 40px;
+    }
     .profilePic{
         width: 40%;
         margin-left: 3px;
         position:relative;
+        box-shadow: 20px 20px rgb(0, 255, 255, .5);
     }
     .heading{
         font-size: medium;
         font-size: 15px;
-        margin: 0px 0px 0px 0px;
+        margin: 30px 0px 0px 0px;
     }
     .resume {
         color: aqua;
@@ -117,6 +136,8 @@ box-shadow: 15px 15x black;
     .nav   {
         margin: 5px 5px 5px 5px;
         height: 40px;
+        margin-left: 0px;
+        position: absolute;
     }
     .nav button {
         color: aqua;
@@ -124,23 +145,21 @@ box-shadow: 15px 15x black;
         border-radius: 6px;
     }
     .aboutMe{
-        height: 100px;
-        padding:0;
-        font-size: 10px;
+        height: 130px;
+        padding:5px;
+        font-size: 12px;
         padding: 4px;
+        margin-top: 0;
 
     }
     .skills{
-        width: 100px;
-        height: 120px;
+        width: 200px;
+        height: 75px;
         font-size: 10px;
-        display: inline-flexbox;
-        margin-left: 0;
-        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
         
-    }
-    .skillsLi{
-        text-align: left;
     }
     
     footer{
@@ -156,10 +175,36 @@ footer{
     
 }
 
-.page-2 {
+.current-page {
+    overflow-y: scroll;
+}
+
+.hidden-page {
     display: none;
 }
 
-.page-3 {
-    display: none;
+#projects1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+}
+#project1 h3 {
+    list-style: none;
+    color: aqua;
+}
+#Projects p{
+    font-size: large;
+    font-size: 76px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#projects1 img {
+    max-width: 400px; 
+    display: inline;
+    box-shadow: 20px 20px rgb(0, 255, 255, .5);
+
 }
