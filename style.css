@@ -44,8 +44,6 @@ box-shadow: 15px 15x black;
 .nav { 
     text-align: center;
     margin-top: 30px;
-    margin-right: 0;
-    margin-top: 0;
     width: 100%;
     position: fixed;
     list-style: none;
@@ -57,7 +55,6 @@ box-shadow: 15px 15x black;
 .nav li{
     text-decoration: none;
     padding: 5px;
-    list-style: none;
     animation: color-chnage 1s infinite;
     -webkit-animation: color-change 1s infinite;
     -moz-animation: color-change 1s infinite;
@@ -115,15 +112,12 @@ box-shadow: 15px 15x black;
 
 
 @media(max-width: 500px){
-
-    .container{
-        margin-top: 40px;
-    }
     .profilePic{
         width: 40%;
         margin-left: 3px;
         position:relative;
         box-shadow: 20px 20px rgb(0, 255, 255, .5);
+        margin-top: 60px
     }
     .heading{
         font-size: medium;
@@ -138,6 +132,7 @@ box-shadow: 15px 15x black;
         height: 40px;
         margin-left: 0px;
         position: absolute;
+        margin: 0 auto;
     }
     .nav button {
         color: aqua;
@@ -181,53 +176,62 @@ footer{
 #projects1 {
     display: flex;
     flex-direction: row;
-    margin-top: 40px;
-    justify-content: center;
     text-align: center;
-}#Projects p{
+
+}
+
+
+#projects1 h1{
     font-size: large;
     font-size: 76px;
-    text-align: left;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-top: 0;
+    margin-top: 100px;
     color: aqua;
-}#projects1 img {
+    margin-left: 50px;
+}
+#projects1 img {
     max-width: 400px; 
     box-shadow: 20px 20px rgb(0, 255, 255, .5);
-}a {
+    margin-top: 200px;
+}
+a {
     color: whitesmoke;
     text-decoration: none;
 }
 
 @media(max-width: 500px){
+
     #projects1 {
-        margin-top: 20px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
     
     }
-    #Projects p{
-        font-size: medium;
-        font-size: 60px;
-        margin-top: 80px;
+    #projects1 h1{
+        font-size: 40px;
         color: aqua;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin-top: 100px;
     }
     
     #projects1 img {
         max-width: 95%; 
+        margin-top: 20px;
     }
 }
 
 #Contacts h1 {
-    font-size: 76px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 70px;
     text-align: left;
     color:aqua;
+    
 }
 
 .paragraph {
     font-size: 25px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: justify;
     color: whitesmoke;
     margin-top: 30px;
     border-style: dashed;
@@ -235,6 +239,7 @@ footer{
     border-width: 4px;
     margin: 0 auto;
     padding: 10px;
+    text-align: justify;
 }
 
 #Contacts img {    
@@ -250,4 +255,10 @@ footer{
 #Contacts li {
     list-style: none;
     margin: 5px;
+}
+
+@media(max-width: 500px) {
+   #Contacts h1 {
+    
+   }
 }
