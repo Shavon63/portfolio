@@ -3,6 +3,7 @@
 } */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
 body {
     background-color: blanchedalmond;
 }
@@ -13,16 +14,15 @@ box-shadow: 15px 15x black;
 .container{
     display: flex;
     margin: 25px 10px 50px 50px ;
-    width: fit-content;
 }
 .container img{
     margin-right: 20px;
     border-radius: 4%;
-    box-shadow: 20px 20px rgb(0, 255, 255, .5);
+    box-shadow: 10px 10px rgb(0, 255, 255, .5);
 }
 .heading {
     font-size: 25px;
-    font-family: "Aton, russo"; 
+    font-family: Anton, sans-serif; 
     margin-top: 30px;
     animation: color-chnage 1s infinite;
     -webkit-animation: color-change 1s infinite;
@@ -30,20 +30,24 @@ box-shadow: 15px 15x black;
     -o-animation: color-change 1s infinite;
     -ms-animation: color-change 1s infinite;
     animation: color-change 1s infinite;
+    margin-top: 70px;
     text-align: center;
 }
 
+
 @keyframes color-change {
-    0% {color: red}
-    50% {color: green}
+    0% {color: black}
+    50% {color: gray}
     100% {color: blue}
 }
 
-
+.heading h3 {
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
 
 .nav { 
     text-align: center;
-    margin-top: 30px;
+    margin-top: 0;
     width: 100%;
     position: fixed;
     list-style: none;
@@ -67,7 +71,6 @@ box-shadow: 15px 15x black;
 }
 
 .nav button {
-    color: aqua;
     background-color: rgb(0, 255, 255, .5);
     border-radius: 6px;
     cursor: pointer;
@@ -93,11 +96,13 @@ box-shadow: 15px 15x black;
     text-align: justify;
     font-size:26px;
     margin: 150px 20px 10px 20px;
+    border-radius: 7px;
     
 } 
 .skills {
     border-style: dashed;
     border-width: 4px;
+    border-radius: 7px;
     text-align: justify;
     color: whitesmoke;
     width: 300px;
@@ -164,7 +169,7 @@ box-shadow: 15px 15x black;
 
 footer{
     color: whitesmoke;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Oleo Script Swash Caps', cursive;
     font-size: 20px;
     text-align: center;
     
@@ -184,14 +189,14 @@ footer{
 #projects1 h1{
     font-size: large;
     font-size: 76px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Anton, sans-serif;
     margin-top: 100px;
     color: aqua;
-    margin-left: 50px;
+    margin-left: 40px;
 }
 #projects1 img {
     max-width: 400px; 
-    box-shadow: 20px 20px rgb(0, 255, 255, .5);
+    box-shadow: 10px 10px rgb(0, 255, 255, .5);
     margin-top: 200px;
 }
 a {
@@ -212,7 +217,7 @@ a {
         color: aqua;
         text-align: center;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        margin-top: 100px;
+        margin-top: 50px;
     }
     
     #projects1 img {
@@ -221,11 +226,14 @@ a {
     }
 }
 
-#Contacts h1 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+.h1 {
+    font-family: Anton, sans-serif;
     font-size: 70px;
     text-align: left;
     color:aqua;
+    margin-left: 40px;
+    margin-top: 0px;
     
 }
 
@@ -237,6 +245,7 @@ a {
     border-style: dashed;
     width: 80%;
     border-width: 4px;
+    border-radius: 7px;
     margin: 0 auto;
     padding: 10px;
     text-align: justify;
@@ -258,7 +267,7 @@ a {
 }
 
 @media(max-width: 500px) {
-   #Contacts h1 {
-    
+   .h1 {
+    font-size: 40px;
    }
 }
