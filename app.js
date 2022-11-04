@@ -3,16 +3,16 @@ const buttons = document.getElementsByTagName("button")
 
 
 function onClickHandle(event) {
-    const pageId = event.target.innerText
+    const id = event.target.innerText
 
-    // loop over all the pages
+    // loop though pages
     for (let i = 0; i < pages.length; i++) {
-        // check if the page we're currently looping over has an id that matches the clicked button's text
-        if (pageId === pages[i].id) {
-            // if the page's id matches the clicked button's text, make that page visible.
+        // check if button clicked innerText is equal to the id of the section tag.
+        if (id === pages[i].id) {
+            // if the button innertext matches the sections id text, make that page visible.
             pages[i].className = "current-page"
         } else {
-            // if the page's id doesn't match the clicked button's text, make that page invisible.
+            // if the button innertext doesn't match the sections id, make that page invisible.
             pages[i].className = "hidden-page"
         }
     }
