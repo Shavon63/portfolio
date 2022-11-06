@@ -10,6 +10,7 @@ body {
 /* .profilePic{
 box-shadow: 15px 15x black;
 } */
+
 .container{
     display: flex;
     flex-direction: row;
@@ -113,6 +114,11 @@ box-shadow: 15px 15x black;
     font-size: 18px;
 }
 
+.background {
+    position: absolute;
+    width: 100%;
+    
+}
 
 @media(max-width: 500px){
     .profilePic{

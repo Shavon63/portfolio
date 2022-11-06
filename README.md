@@ -9,8 +9,7 @@ I used css and html with Javascript. in java there was a neccessity to make butt
 ##### installation instructions 
 first I had to add my css file name to the html with rel=stylesheet and href=style.css. i then had to hook up my java by adding scripts tags and adding app.js to its src.
 
-#### 
-User Stories: im a recruiting manager at google and ive been looking through linked in for two weeks to find a qualified candidtae to fit our open position. weve stumbled apon your portfolio and liked the layout and design. we also thought by way of your about me and resume that you'd be perfect for this position. Most people who come to my portfolio will be looking for someone to filla position in their company or maybe even someone to do some freelancing work for them.
+#### User Stories: im a recruiting manager at google and ive been looking through linked in for two weeks to find a qualified candidtae to fit our open position. weve stumbled apon your portfolio and liked the layout and design. we also thought by way of your about me and resume that you'd be perfect for this position. Most people who come to my portfolio will be looking for someone to filla position in their company or maybe even someone to do some freelancing work for them.
 
 #### wireFrame
 ![Wire Frame](./images/wireframe1.jpeg)
