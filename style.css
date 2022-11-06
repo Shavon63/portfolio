@@ -10,47 +10,41 @@ body {
 /* .profilePic{
 box-shadow: 15px 15x black;
 } */
-
 .container{
     display: flex;
-    margin: 25px 10px 50px 50px ;
-    width: 100%;
+    flex-direction: row;
 }
 .container img{
-    margin-right: 20px;
+    margin: auto;
     border-radius: 4%;
-    box-shadow: 10px 10px rgb(0, 255, 255, .5);
+    box-shadow: 10px 10px rgba(45, 50, 50, 0.5);
+    margin-top: 100px;
 }
 .heading {
     font-size: 25px;
     font-family: Anton, sans-serif; 
-    margin-top: 30px;
-    animation: color-chnage 1s infinite;
-    -webkit-animation: color-change 1s infinite;
-    -moz-animation: color-change 1s infinite;
-    -o-animation: color-change 1s infinite;
-    -ms-animation: color-change 1s infinite;
-    animation: color-change 1s infinite;
-}
-
-
-@keyframes color-change {
-    0% {color: black}
-    50% {color: gray}
-    100% {color: blue}
-}
-.heading {
     margin: auto;
     text-align: center;
-    margin-left: 190px;
+    margin-left: 40px;
+    animation: color-chnage 2s infinite;
+    -webkit-animation: color-change 2s infinite;
+    -moz-animation: color-change 2s infinite;
+    -o-animation: color-change 2s infinite;
+    -ms-animation: color-change 2s infinite;
+    animation: color-change 2s infinite;
+    margin-top: 100px;
 }
+
+
+
+
 .heading h3 {
     font-family: 'Oleo Script Swash Caps', cursive;
 }
 
 .nav { 
     text-align: center;
-    margin-top: 0;
+    margin-top: 0px;
     width: 100%;
     position: fixed;
     list-style: none;
@@ -62,26 +56,25 @@ box-shadow: 15px 15x black;
 .nav li{
     text-decoration: none;
     padding: 5px;
-    animation: color-chnage 1s infinite;
-    -webkit-animation: color-change 1s infinite;
-    -moz-animation: color-change 1s infinite;
-    -o-animation: color-change 1s infinite;
-    -ms-animation: color-change 1s infinite;
-    animation: color-change 1s infinite;
-    text-align: right; 
+    animation: color-chnage 2s infinite;
+    -webkit-animation: color-change 2s infinite;
+    -moz-animation: color-change 2s infinite;
+    -o-animation: color-change 2s infinite;
+    -ms-animation: color-change 2s infinite;
+    animation: color-change 2s infinite;
 
 
 }
 
 .nav button {
-    background-color: rgb(0, 255, 255, .5);
+    background-color: rgba(218, 237, 237, 1);
     border-radius: 6px;
     cursor: pointer;
 }
 @keyframes color-change {
-    0% {color: red}
-    50% {color: green}
-    100% {color: blue}
+    0% {color: rgb(241, 210, 210)}
+    50% {color: rgb(124, 135, 124)}
+    100% {color: rgb(72, 72, 77)}
 }
     
 
@@ -96,11 +89,12 @@ box-shadow: 15px 15x black;
     padding: 5px;
     border-style: dashed;
     border-width: 4px;
-    margin: 150px 20px 10px 60px;
     text-align: justify;
     font-size:26px;
     border-radius: 7px;
     width: 80%;
+    margin: auto;
+    margin-top: 50px;
     
 } 
 .skills {
@@ -113,7 +107,7 @@ box-shadow: 15px 15x black;
     height: 140px;
     font-size: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
-    margin: 60px 20px 10px 60px;  
+    margin: 40px auto; 
     display: flex;
     flex-direction: row;
     font-size: 18px;
@@ -123,15 +117,12 @@ box-shadow: 15px 15x black;
 @media(max-width: 500px){
     .profilePic{
         width: 40%;
-        margin-left: 3px;
-        position:relative;
-        box-shadow: 20px 20px rgb(0, 255, 255, .5);
-        margin-top: 60px
+        box-shadow: 20px 20px rgba(72, 78, 78, 0.5);
     }
     .heading{
         font-size: medium;
         font-size: 15px;
-        margin: 30px 0px 0px 0px;
+        margin-top: 100px;
     }
     .resume {
         color: aqua;
@@ -141,7 +132,7 @@ box-shadow: 15px 15x black;
         height: 40px;
         margin-left: 0px;
         position: absolute;
-        margin: 0 auto;
+        margin-top: 0;
     }
     .nav button {
         color: aqua;
@@ -153,7 +144,6 @@ box-shadow: 15px 15x black;
         padding:5px;
         font-size: 12px;
         padding: 4px;
-        margin-top: 0;
 
     }
     .skills{
@@ -162,7 +152,7 @@ box-shadow: 15px 15x black;
         font-size: 10px;
         display: flex;
         flex-direction: row;
-        margin-top: 0;
+        margin-top: 20px;
         
     }
     
@@ -200,7 +190,7 @@ footer{
 }
 #projects1 img {
     max-width: 400px; 
-    box-shadow: 10px 10px rgb(0, 255, 255, .5);
+    box-shadow: 10px 10px rgba(66, 72, 72, 0.5);
     margin-top: 200px;
 }
 a {
@@ -234,25 +224,23 @@ a {
 .h1 {
     font-family: Anton, sans-serif;
     font-size: 70px;
-    text-align: left;
-    color:aqua;
-    margin-left: 40px;
+    color:aqua; 
+    height: 100px;
+    padding-top: 50px;
     margin-top: 0px;
-    
 }
 
 .paragraph {
     font-size: 25px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: whitesmoke;
-    margin-top: 30px;
     border-style: dashed;
     width: 80%;
     border-width: 4px;
     border-radius: 7px;
-    margin: 0 auto;
     padding: 10px;
     text-align: justify;
+    margin: 0 auto;
 }
 
 #Contacts img {    
@@ -273,5 +261,13 @@ a {
 @media(max-width: 500px) {
    .h1 {
     font-size: 40px;
+    text-align: center;
+   }
+
+   .paragraph {
+    font-size: 18px;
+   }
+   #Contacts ul {
+    padding-top: 20px;
    }
 }
