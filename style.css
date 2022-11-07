@@ -11,6 +11,23 @@ body {
 box-shadow: 15px 15x black;
 } */
 
+.p-intro{
+    font-size: 120px;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    color: aqua;
+    text-align: center;
+    padding: 100px;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    animation: color-chnage 2s infinite;
+    -webkit-animation: color-change 2s infinite;
+    -moz-animation: color-change 2s infinite;
+    -o-animation: color-change 2s infinite;
+    -ms-animation: color-change 2s infinite;
+    animation: color-change 2s infinite;
+}
+
 .container{
     display: flex;
     flex-direction: row;
@@ -72,6 +89,7 @@ box-shadow: 15px 15x black;
     background-color: rgba(218, 237, 237, 1);
     border-radius: 6px;
     cursor: pointer;
+    
 }
 @keyframes color-change {
     0% {color: rgb(0, 225, 225)}
@@ -173,8 +191,9 @@ footer{
     font-family: 'Oleo Script Swash Caps', cursive;
     font-size: 20px;
     text-align: center;
-    
-}.hidden-page {
+}
+
+.hidden-page {
     display: none;
 }
 
