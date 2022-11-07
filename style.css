@@ -74,7 +74,7 @@ box-shadow: 15px 15x black;
     cursor: pointer;
 }
 @keyframes color-change {
-    0% {color: rgb(241, 210, 210)}
+    0% {color: rgb(0, 225, 225)}
     50% {color: rgb(124, 135, 124)}
     100% {color: rgb(72, 72, 77)}
 }
