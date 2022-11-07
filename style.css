@@ -18,7 +18,7 @@ box-shadow: 15px 15x black;
 .container img{
     margin: auto;
     border-radius: 4%;
-    box-shadow: 10px 10px rgba(45, 50, 50, 0.5);
+    box-shadow: 10px 10px rgba(0, 255, 255, 0.5);
     margin-top: 100px;
     border-radius: 25px;
 }
