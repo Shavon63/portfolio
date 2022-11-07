@@ -20,6 +20,7 @@ box-shadow: 15px 15x black;
     border-radius: 4%;
     box-shadow: 10px 10px rgba(45, 50, 50, 0.5);
     margin-top: 100px;
+    border-radius: 25px;
 }
 .heading {
     font-size: 25px;
@@ -239,7 +240,6 @@ a {
 .paragraph {
     font-size: 25px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: whitesmoke;
     border-style: dashed;
     width: 80%;
     border-width: 4px;
@@ -247,6 +247,7 @@ a {
     padding: 10px;
     text-align: justify;
     margin: 0 auto;
+    color: white;
 }
 
 #Contacts img {    
